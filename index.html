@@ -50,7 +50,8 @@
         </nav>
 
         <!-- Showcase Section -->
-        <section class="bg-dark text-center text-light p-5 p-lg-0 pt-lg-5
+        <section id="showcase" class="bg-dark text-center text-light p-5 p-lg-0
+            pt-lg-5
             text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center
@@ -64,8 +65,71 @@
                             fundamentals of
                             the latest and greatest technologies to prepare them
                             for their first dev role</p>
-                        <button class="btn btn-primary btn-lg">Start My
+                        <button class="btn btn-primary btn-lg "
+                            data-bs-toggle="modal"
+                            data-bs-target="#enrollment-form">Start My
                             Enrollment</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade text-dark" id="enrollment-form"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"
+                                            id="enrollment-formLabel">Modal
+                                            title</h5>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="lead">Get Enrolled and learn
+                                            from our Top
+                                            Instructors</p>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label
+                                                    for="fullname"
+                                                    class="form-label">Full Name</label>
+                                                <input type="email"
+                                                    class="form-control"
+                                                    id="fullname"
+                                                    placeholder="Jack Sparrow">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label
+                                                    for="exampleFormControlInput1"
+                                                    class="form-label">Email
+                                                    address</label>
+                                                <input type="email"
+                                                    class="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="name@example.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label
+                                                    for="exampleFormControlTextarea1"
+                                                    class="form-label">You
+                                                    Career Goals</label>
+                                                <textarea class="form-control"
+                                                    id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn
+                                            btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn
+                                            btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <img class="img-fluid w-50 d-none d-md-block"
                         src="./img/undraw_programming_re_kg9v.svg" alt="">
@@ -414,6 +478,50 @@
                 </div>
             </div>
         </section>
+
+        <section class="contact p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md ">
+                        <h1 class="text-center">Contact Info</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="text-dark
+                                    fs-5 fw-bold">Main Location:</span> 50 Main
+                                Street, Boston, MA</li>
+                            <li class="list-group-item"><span class="text-dark
+                                    fs-5 fw-bold">Enrollment Phone:</span> +1
+                                289 444 5432</li>
+                            <li class="list-group-item"><span class="text-dark
+                                    fs-5 fw-bold">Student Phone:</span> +1 889
+                                342 1232</li>
+                            <li class="list-group-item"><span class="text-dark
+                                    fs-5 fw-bold">Enrollment Email:</span>
+                                johny@pringles.com</li>
+                            <li class="list-group-item"><span class="text-dark
+                                    fs-5 fw-bold">Student Email:</span>
+                                rajRastogi@iipic.com</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md border border-3 rounded">
+                        <iframe class="py-2 map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.8200024744974!2d76.11228343488771!3d31.114734500000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391abdbb99cffc1d%3A0x69aa90a19f8ed210!2sR.K.Arya%20College!5e0!3m2!1sen!2sca!4v1670544285814!5m2!1sen!2sca"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="p-5 pb-3 text-center text-white bg-dark
+            position-relative">
+            <div class="container">
+
+                <p class="lead">Copyright &copy;2021 FrontEnd BootCamp</p>
+                <a href="#" class=" position-absolute bottom-0 end-0 p-5 fs-3"><i
+                        class="bi bi-arrow-up-circle"></i></a>
+            </div>
+        </footer>
         <!-- JavaScript Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
